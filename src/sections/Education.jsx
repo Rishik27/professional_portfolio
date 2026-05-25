@@ -19,6 +19,7 @@ const Education = () => {
               <div className="edu-meta">
                 <h3 className="edu-degree">Master of Science in Computer Science</h3>
                 <p className="edu-school">University of Central Oklahoma</p>
+                <p className="edu-location">📍 Edmond, Oklahoma, USA</p>
                 <div className="edu-badges">
                   <span className="badge badge-year">2025</span>
                   <span className="badge badge-gpa">GPA: 3.45 / 4.00</span>

@@ -3,20 +3,30 @@
 
 /* CSS Variables */
 :root {
-  /* Colors */
-  --primary: #4ecdc4;
-  --secondary: #ff6b6b;
-  --accent: #ffe66d;
-  --dark-bg: #0a0a0a;
-  --dark-secondary: #1a1a2e;
-  --dark-tertiary: #16213e;
-  --text-primary: #ffffff;
-  --text-secondary: #a8b2d1;
-  --text-tertiary: #8892b0;
+  /* Modern Professional Color Scheme */
+  --primary: #3b82f6;           /* Electric Blue */
+  --primary-dark: #1e40af;
+  --primary-light: #60a5fa;
+  --secondary: #06b6d4;         /* Cyan */
+  --accent: #8b5cf6;            /* Vibrant Purple */
+  --success: #10b981;           /* Emerald Green */
+  --warning: #f59e0b;           /* Amber */
+  --danger: #ef4444;            /* Red */
+  
+  /* Dark backgrounds with blue tint */
+  --dark-bg: #0f172a;           /* Darker blue-black */
+  --dark-secondary: #1e293b;    /* Slate */
+  --dark-tertiary: #334155;     /* Light slate */
+  
+  /* Text colors */
+  --text-primary: #f1f5f9;      /* Almost white */
+  --text-secondary: #cbd5e1;    /* Light gray */
+  --text-tertiary: #94a3b8;     /* Medium gray */
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
-  --gradient-secondary: linear-gradient(135deg, #4ecdc4 0%, #ffe66d 100%);
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
   
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -29,11 +39,19 @@
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --border-radius-lg: 20px;
+  --border-radius-xl: 32px;
   
   /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
-  --transition-slow: 0.5s ease;
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.2);
 }
 
 /* Reset and Base Styles */

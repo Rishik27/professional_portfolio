@@ -8,7 +8,7 @@ const Hero = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const roles = ['Full Stack Developer', 'React Specialist', 'Cloud Engineer', 'Problem Solver'];
+  const roles = ['Full Stack Java Developer', 'Spring Boot Expert', 'Microservices Architect', 'Cloud Solutions Engineer'];
 
   useEffect(() => {
     const handleTyping = () => {

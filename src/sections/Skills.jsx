@@ -6,40 +6,108 @@ const Skills = () => {
   const sectionRef = useRef(null);
 
   const skillsData = {
-    frontend: [
-      { name: 'React', level: 95, icon: '⚛️' },
-      { name: 'JavaScript (ES6+)', level: 90, icon: '⚡' },
-      { name: 'HTML5 & CSS3', level: 90, icon: '🎨' },
-      { name: 'Redux', level: 85, icon: '🔄' },
-      { name: 'Responsive Design', level: 90, icon: '📱' }
+    languages: [
+      { name: 'Java 17/13/8', level: 95, icon: '☕' },
+      { name: 'SQL (Advanced)', level: 95, icon: '📊' },
+      { name: 'JavaScript', level: 90, icon: '⚡' },
+      { name: 'TypeScript', level: 85, icon: '📘' },
+      { name: 'HTML5', level: 90, icon: '🌐' },
+      { name: 'CSS3', level: 90, icon: '🎨' }
     ],
     backend: [
-      { name: 'Node.js', level: 85, icon: '🟢' },
-      { name: 'Express', level: 80, icon: '🚂' },
-      { name: 'REST APIs', level: 90, icon: '🔌' },
-      { name: 'GraphQL', level: 80, icon: '📊' },
-      { name: 'Microservices', level: 85, icon: '🏗️' }
+      { name: 'Spring Boot', level: 95, icon: '🌱' },
+      { name: 'Spring MVC', level: 92, icon: '🌿' },
+      { name: 'Spring Security', level: 90, icon: '🔒' },
+      { name: 'Spring WebFlux', level: 88, icon: '⚡' },
+      { name: 'Hibernate & JPA', level: 92, icon: '🏛️' },
+      { name: 'JDBC & JSP', level: 88, icon: '🔌' },
+      { name: 'J2EE', level: 85, icon: '☕' },
+      { name: 'REST APIs', level: 95, icon: '📡' },
+      { name: 'Microservices', level: 92, icon: '🏗️' },
+      { name: 'GraphQL', level: 80, icon: '⚙️' },
+      { name: 'gRPC', level: 80, icon: '🔄' }
+    ],
+    frontend: [
+      { name: 'React', level: 90, icon: '⚛️' },
+      { name: 'Angular', level: 85, icon: '🅰️' },
+      { name: 'Vue.JS', level: 82, icon: '💚' },
+      { name: 'Next.JS', level: 85, icon: '⚫' },
+      { name: 'Node.JS', level: 88, icon: '🟢' },
+      { name: 'Redux', level: 88, icon: '🔄' },
+      { name: 'Material UI', level: 85, icon: '🎭' },
+      { name: 'Bootstrap', level: 90, icon: '📦' },
+      { name: 'AJAX & JSON', level: 90, icon: '💾' }
+    ],
+    security: [
+      { name: 'OAuth 2.0', level: 90, icon: '🔐' },
+      { name: 'JWT Authentication', level: 92, icon: '🔑' },
+      { name: 'Spring Security', level: 90, icon: '🛡️' },
+      { name: 'SSL/TLS Encryption', level: 85, icon: '🔒' },
+      { name: 'PCI-DSS Compliance', level: 85, icon: '✓' }
     ],
     databases: [
-      { name: 'SQL', level: 85, icon: '🗄️' },
-      { name: 'MySQL', level: 85, icon: '🐬' },
-      { name: 'PostgreSQL', level: 80, icon: '🐘' },
-      { name: 'MongoDB', level: 80, icon: '🍃' },
-      { name: 'NoSQL', level: 80, icon: '📦' }
+      { name: 'Oracle', level: 90, icon: '🏛️' },
+      { name: 'PostgreSQL', level: 92, icon: '🐘' },
+      { name: 'MySQL', level: 88, icon: '🐬' },
+      { name: 'MongoDB', level: 88, icon: '🍃' },
+      { name: 'Cassandra', level: 85, icon: '📊' },
+      { name: 'Redis', level: 88, icon: '🚀' },
+      { name: 'Elasticsearch', level: 82, icon: '🔍' },
+      { name: 'Spring Data JPA', level: 90, icon: '📚' },
+      { name: 'Flyway', level: 85, icon: '🛫' }
     ],
     cloud: [
-      { name: 'AWS', level: 85, icon: '☁️' },
-      { name: 'Docker', level: 80, icon: '🐳' },
-      { name: 'Kubernetes', level: 75, icon: '⚓' },
-      { name: 'CI/CD', level: 85, icon: '🔄' },
-      { name: 'GCP', level: 70, icon: '☁️' }
+      { name: 'AWS (EC2, S3, Lambda, RDS)', level: 92, icon: '☁️' },
+      { name: 'Azure (App Service, SQL DB)', level: 90, icon: '🔵' },
+      { name: 'AWS CloudWatch', level: 88, icon: '👁️' },
+      { name: 'API Gateway', level: 88, icon: '🚪' },
+      { name: 'VPC & IAM', level: 88, icon: '🔐' },
+      { name: 'GCP', level: 80, icon: '☁️' },
+      { name: 'OpenShift', level: 82, icon: '🔴' },
+      { name: 'ROSA', level: 82, icon: '🔴' }
+    ],
+    devops: [
+      { name: 'Docker', level: 92, icon: '🐳' },
+      { name: 'Kubernetes', level: 88, icon: '⚓' },
+      { name: 'Jenkins', level: 90, icon: '🔨' },
+      { name: 'GitLab CI/CD', level: 88, icon: '🦊' },
+      { name: 'GitHub Actions', level: 88, icon: '⚙️' },
+      { name: 'Git & Bitbucket', level: 95, icon: '📚' },
+      { name: 'Terraform', level: 88, icon: '🏗️' },
+      { name: 'Maven & Gradle', level: 92, icon: '📦' }
+    ],
+    testing: [
+      { name: 'JUnit', level: 92, icon: '✅' },
+      { name: 'TestNG', level: 88, icon: '🧪' },
+      { name: 'Mockito', level: 90, icon: '🎭' },
+      { name: 'Selenium', level: 85, icon: '🤖' },
+      { name: 'Cypress', level: 85, icon: '🌳' },
+      { name: 'REST Assured', level: 85, icon: '🔬' },
+      { name: 'Postman', level: 90, icon: '📮' }
+    ],
+    monitoring: [
+      { name: 'ELK Stack', level: 85, icon: '📊' },
+      { name: 'Log4J & SLF4J', level: 88, icon: '📝' },
+      { name: 'Prometheus', level: 82, icon: '📈' },
+      { name: 'Grafana', level: 85, icon: '📉' },
+      { name: 'Dynatrace', level: 80, icon: '👁️' },
+      { name: 'SonarQube', level: 85, icon: '🔍' },
+      { name: 'Nexus', level: 82, icon: '📦' }
+    ],
+    messaging: [
+      { name: 'Kafka', level: 88, icon: '🚂' },
+      { name: 'RabbitMQ', level: 85, icon: '🐰' },
+      { name: 'WebSockets', level: 85, icon: '🔌' },
+      { name: 'ActiveMQ', level: 82, icon: '📬' },
+      { name: 'Solace', level: 80, icon: '🌊' },
+      { name: 'AWS SNS', level: 85, icon: '📢' }
     ],
     tools: [
-      { name: 'Git & GitHub', level: 90, icon: '📚' },
-      { name: 'VS Code', level: 95, icon: '💻' },
-      { name: 'Postman', level: 90, icon: '📮' },
-      { name: 'Jenkins', level: 80, icon: '🔨' },
-      { name: 'IntelliJ IDEA', level: 85, icon: '💡' }
+      { name: 'IntelliJ IDEA', level: 95, icon: '💡' },
+      { name: 'Swagger/OpenAPI', level: 88, icon: '📖' },
+      { name: 'JIRA', level: 88, icon: '📋' },
+      { name: 'Confluence', level: 85, icon: '📚' },
+      { name: 'Agile/Scrum', level: 90, icon: '🎯' }
     ]
   };
 

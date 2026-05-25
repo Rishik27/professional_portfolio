@@ -68,18 +68,29 @@ const Contact = () => {
             <div className="info-card">
               <div className="info-icon">💼</div>
               <h3>Current Role</h3>
-              <p>Full Stack Software Developer</p>
-              <p className="info-company">S&P Global</p>
+              <p>Full Stack Java Developer</p>
+              <p className="info-company">Citizens Bank</p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">📧</div>
               <h3>Email</h3>
               <a 
-                href="mailto:rishik@itjobworks.com"
+                href="mailto:rvadapalli2002@gmail.com"
                 className="info-link"
               >
-                rishik@itjobworks.com
+                rvadapalli2002@gmail.com
+              </a>
+            </div>
+
+            <div className="info-card">
+              <div className="info-icon">📱</div>
+              <h3>Phone</h3>
+              <a 
+                href="tel:+14796578779"
+                className="info-link"
+              >
+                +1 (479) 657-8779
               </a>
             </div>
 
@@ -87,7 +98,7 @@ const Contact = () => {
               <div className="info-icon">💼</div>
               <h3>LinkedIn</h3>
               <a 
-                href="https://linkedin.com/in/rishik-vadapalli-9232b3198/" 
+                href="https://www.linkedin.com/in/rishik-vadapalli-95bbb1380/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="info-link"
