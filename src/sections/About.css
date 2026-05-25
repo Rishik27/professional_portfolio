@@ -130,11 +130,11 @@
 /* Stats Section */
 .about-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
   animation: fadeInRight 0.8s ease-out both;
   animation-delay: 0.1s;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
