@@ -12,8 +12,8 @@ function App() {
     <>
       <Navigation />
       <Hero />
-      <About />
       <Skills />
+      <About />
       <Education />
       <Experience />
       <Projects />
