@@ -129,14 +129,16 @@
 
 /* Stats Section */
 .about-stats {
+  animation: fadeInRight 0.8s ease-out both;
+  animation-delay: 0.1s;
+  width: 100%;
+}
+
+.stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  animation: fadeInRight 0.8s ease-out both;
-  animation-delay: 0.1s;
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .stat-card {
@@ -387,7 +389,7 @@
     gap: 3rem;
   }
 
-  .about-stats {
+  .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -410,7 +412,7 @@
     text-align: center;
   }
   
-  .about-stats {
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 
@@ -422,7 +424,7 @@
     font-size: 1rem;
   }
 
-  .about-stats {
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 
