@@ -46,15 +46,17 @@
 
 /* Main About Content */
 .about-content {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 5rem;
   margin-top: 4rem;
-  align-items: start;
 }
 
 .about-text {
   animation: fadeInLeft 0.8s ease-out both;
+  max-width: 900px;
+  width: 100%;
 }
 
 .intro-card {
@@ -66,6 +68,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .intro-card::before {
@@ -127,10 +130,13 @@
 /* Stats Section */
 .about-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   animation: fadeInRight 0.8s ease-out both;
   animation-delay: 0.1s;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .stat-card {
@@ -382,7 +388,7 @@
   }
 
   .about-stats {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .expertise-grid {
@@ -401,6 +407,11 @@
 
   .intro-card {
     padding: 2rem;
+    text-align: center;
+  }
+  
+  .about-stats {
+    grid-template-columns: 1fr;
   }
 
   .about-intro {
