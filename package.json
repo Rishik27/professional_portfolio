@@ -1,7 +1,7 @@
 {
-  "name": "my-portfolio",
+  "name": "professional_portfolio",
   "private": true,
-  "homepage": "https://Rishik27.github.io/my-portfolio",
+  "homepage": "https://Rishik27.github.io/professional_portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
